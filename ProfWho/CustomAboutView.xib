@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIAboutView">
+            <connections>
+                <outlet property="aboutTextView" destination="S84-Gc-Ybg" id="vHE-hw-KDt"/>
+                <outlet property="aboutTitle" destination="Kd1-Ro-d3A" id="elC-Qr-LZB"/>
+                <outlet property="mainView" destination="iN0-l3-epB" id="00A-zR-1fe"/>
+                <outlet property="readMoreButton" destination="5eK-si-hZc" id="eyT-az-4TI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="274"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kd1-Ro-d3A">
+                    <frame key="frameInset" minX="16" minY="20" width="343" height="21"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Biography">
+                            <attributes>
+                                <color key="NSColor" red="0.08235294118" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" metaFont="system" size="17"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="749" scrollEnabled="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S84-Gc-Ybg">
+                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eK-si-hZc">
+                    <state key="normal" title="&gt;&gt; Tap to show more">
+                        <color key="titleColor" red="0.60784313729999995" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="readMore:" destination="-1" eventType="touchUpInside" id="iXc-se-XVK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="S84-Gc-Ybg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Bhy-r6-wnb"/>
+                <constraint firstAttribute="trailing" secondItem="S84-Gc-Ybg" secondAttribute="trailing" constant="26" id="D3D-TP-eJB"/>
+                <constraint firstItem="S84-Gc-Ybg" firstAttribute="top" secondItem="Kd1-Ro-d3A" secondAttribute="bottom" constant="8" id="T2D-DH-1Og"/>
+                <constraint firstAttribute="trailing" secondItem="5eK-si-hZc" secondAttribute="trailing" constant="26" id="Uo7-G8-8LV"/>
+                <constraint firstItem="5eK-si-hZc" firstAttribute="top" secondItem="S84-Gc-Ybg" secondAttribute="bottom" constant="-13" id="dmc-gR-hhj"/>
+                <constraint firstItem="Kd1-Ro-d3A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="f63-7E-1SP"/>
+                <constraint firstItem="Kd1-Ro-d3A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="z0S-J8-RNj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="-125"/>
+        </view>
+    </objects>
+</document>
